@@ -11,19 +11,10 @@
               "color_scheme": "accent-1",
               "link": ""
             }
-          },
-          "17b57837-3b0a-4b88-a3ff-e32a65b7ad40": {
-            "type": "announcement",
-            "settings": {
-              "text": "Get our discount code by registering your email",
-              "color_scheme": "accent-2",
-              "link": ""
-            }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "17b57837-3b0a-4b88-a3ff-e32a65b7ad40"
+          "announcement-bar-0"
         ],
         "settings": {
         }
