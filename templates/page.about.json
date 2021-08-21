@@ -1,0 +1,15 @@
+{
+  "layout": "naked",
+  "sections": {
+    "main": {
+      "type": "page-about-us"
+    },
+    "error": {
+      "type": "main-404"
+    }
+  },
+  "order": [
+    "main",
+    "error"
+  ]
+}
