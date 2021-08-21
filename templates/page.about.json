@@ -2,21 +2,10 @@
   "layout": "naked",
   "sections": {
     "main": {
-<<<<<<< HEAD
       "type": "page-about-us"
     },
     "error": {
       "type": "main-404"
-=======
-      "type": "page-about-us",
-      "settings": {
-      }
-    },
-    "error": {
-      "type": "main-404",
-      "settings": {
-      }
->>>>>>> 2b3d1bfb407f857292d21bc3f447aa78c835d0ff
     }
   },
   "order": [
