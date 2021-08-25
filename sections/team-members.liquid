@@ -6,6 +6,15 @@
             </h2>
         </div>
     {% endif %}
+
+    {% for staff in section.blocks %}
+        <div>
+            <h3>{{ staff.settings.name }}</h3>
+            <p>{{ staff.settings.title }}</p>
+            <p>{{ staff.settings.bio }}</p>
+        </div>
+    {% endfor %}
+    
 </div>
 {% schema %}
 {
@@ -17,6 +26,29 @@
             "type": "text",
             "label": "Section Title",
             "default": "Meet Our Team"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Team Members",
+            "type": "staff-profile",
+            "settings": [
+                {
+                    "id": "name",
+                    "type": "text",
+                    "label": "Name"
+                },
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Job Title"
+                },
+                {
+                    "id": "bio",
+                    "type": "textarea",
+                    "label": "Bio"
+                }
+            ]
         }
     ]
 }
