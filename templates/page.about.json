@@ -2,9 +2,13 @@
   "sections": {
     "main": {
       "type": "page-about-us"
+    },
+    "team-members": {
+      "type": "team-members"
     }
   },
   "order": [
-    "main"
+    "main",
+    "team-members"
   ]
 }
