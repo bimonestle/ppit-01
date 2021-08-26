@@ -7,13 +7,18 @@
         </div>
     {% endif %}
 
-    {% for staff in section.blocks %}
-        <div>
-            <h3>{{ staff.settings.name }}</h3>
-            <p>{{ staff.settings.title }}</p>
-            <p>{{ staff.settings.bio }}</p>
-        </div>
-    {% endfor %}
+    <div class="grid">
+        {% for staff in section.blocks %}
+            {% if staff.settings.photo %}
+                {{ staff.settings.photo | img_url: '250x' | img_tag }}
+            {% endif %}
+            <div class= "grid__item medium-up--one-half">
+                <h3>{{ staff.settings.name }}</h3>
+                <p>{{ staff.settings.title }}</p>
+                <p>{{ staff.settings.bio }}</p>
+            </div>
+        {% endfor %}
+    </div>
     
 </div>
 {% schema %}
@@ -33,6 +38,11 @@
             "name": "Team Members",
             "type": "staff-profile",
             "settings": [
+                {
+                    "id": "photo",
+                    "type": "image_picker",
+                    "label": "Photo"
+                },
                 {
                     "id": "name",
                     "type": "text",
