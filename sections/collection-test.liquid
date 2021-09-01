@@ -1,0 +1,25 @@
+
+<h1>{{ collection.title }}</h1>
+{% for product in collection.products %}
+    <div>
+        <a href="{{ product.url | within: collection }}">
+            {{ product.title }}
+        </a>
+        {{ product.price }}
+        {% unless product.available %}
+            <br>
+            <strong>Sold out!</strong>
+        {% endunless %}
+
+        {% comment %} {% if product.available == false %}
+            <br>
+            <strong>Sold out!</strong>
+        {% endif %} {% endcomment %}
+    </div>
+    {% else %}
+    <p>no matches</p>
+{% endfor %}
+
+{% if paginate.pages > 1 %}
+    {{ paginate | default_pagination }}
+{% endif%}
