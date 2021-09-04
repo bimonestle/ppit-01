@@ -1,7 +1,10 @@
 {
   "sections": {
     "product-grid": {
-      "type": "collection-test"
+      "type": "collection-test",
+      "settings": {
+        "pagination": 10
+      }
     }
   },
   "order": [
