@@ -1,4 +1,4 @@
-{% paginate collection.products by 5 %}
+{% paginate collection.products by section.settings.pagination-test %}
     <h1>{{ collection.title }}</h1>
     {% for product in collection.products %}
         <div>
@@ -34,7 +34,7 @@
         "settings": [
             {
                 "type": "range",
-                "id": "pagination",
+                "id": "pagination-test",
                 "min": 5,
                 "max": 25,
                 "step": 5,
