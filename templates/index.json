@@ -46,11 +46,6 @@
         "show_vendor": false
       }
     },
-    "featured_collection_test": {
-      "type": "featured-collection-test",
-      "settings": {
-      }
-    },
     "image_text": {
       "type": "image-with-text",
       "blocks": {
@@ -89,7 +84,6 @@
   "order": [
     "image_banner",
     "featured_products",
-    "image_text",
-    "featured_collection_test"
+    "image_text"
   ]
 }
