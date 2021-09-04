@@ -27,3 +27,20 @@
         {{ paginate | default_pagination }}
     {% endif %}
 {% endpaginate %}
+
+{% schema %}
+    {
+        "name": "Collection Test",
+        "settings": [
+            {
+                "type": "range",
+                "id": "pagination",
+                "min": 5,
+                "max": 25,
+                "step": 5,
+                "label": "Products per page",
+                "default": 5
+            }
+        ]
+    }
+{% endschema %}
