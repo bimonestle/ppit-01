@@ -46,13 +46,6 @@
         "show_vendor": false
       }
     },
-    "featured_collection_test": {
-      "type": "featured-collection-test",
-      "settings": {
-        "title": "Featured products test",
-        "collection": ""
-      }
-    },
     "image_text": {
       "type": "image-with-text",
       "blocks": {
@@ -87,7 +80,7 @@
         "layout": "image_first"
       }
     },
-    "16310263416e26e6e7": {
+    "1631029349dfb752bc": {
       "type": "featured-collection-test",
       "settings": {
       }
@@ -97,6 +90,6 @@
     "image_banner",
     "featured_products",
     "image_text",
-    "16310263416e26e6e7"
+    "1631029349dfb752bc"
   ]
 }
