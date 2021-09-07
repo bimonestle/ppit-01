@@ -1,10 +1,19 @@
 {
   "sections": {
     "product-grid": {
-      "type": "collection-test"
+      "type": "collection-test",
+      "settings": {
+        "pagination-test": 5
+      }
+    },
+    "1631026709813a1d4f": {
+      "type": "featured-collection-test",
+      "settings": {
+      }
     }
   },
   "order": [
-    "product-grid"
+    "product-grid",
+    "1631026709813a1d4f"
   ]
 }

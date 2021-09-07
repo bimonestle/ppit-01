@@ -86,11 +86,17 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "16310263416e26e6e7": {
+      "type": "featured-collection-test",
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
-    "image_text"
+    "image_text",
+    "16310263416e26e6e7"
   ]
 }
