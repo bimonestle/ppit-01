@@ -46,6 +46,13 @@
         "show_vendor": false
       }
     },
+    "featured_collection_test": {
+      "type": "featured-collection-test",
+      "settings": {
+        "title": "Featured products test",
+        "collection": ""
+      }
+    },
     "image_text": {
       "type": "image-with-text",
       "blocks": {
