@@ -3,7 +3,6 @@
     "product-grid": {
       "type": "collection-test",
       "settings": {
-        "pagination-test": 5
       }
     }
   },
