@@ -1,24 +1,7 @@
-{% assign collection = collections['50-under-100'] %}
+{% assign collection = collections['featured-collections'] %}
 <div>
     {% for product in collection.products %}
-        <div>
-            <a href="{{ product.url | within: collection }}">
-                {{ product.title }}
-            </a>
-            {{ product.price | money }}
-            {% unless product.available %}
-                <br>
-                <strong>Sold out!</strong>
-            {% endunless %}
-
-            {% comment %} {% if product.available == false %}
-                <br>
-                <strong>Sold out!</strong>
-            {% endif %} {% endcomment %}
-            <a href="{{ product.url | within: collection }}">
-                <img src="{{ product.featured_image.src | img_url: '300x' }}" alt="{{ product.featured_image.alt | escape }}">
-            </a>
-        </div>
+        {% include 'product-items'%}
         {% else %}
         <p>no matches for {{ collection.title }}</p>
         <p>{{ product }}</p>
