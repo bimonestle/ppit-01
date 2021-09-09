@@ -5,15 +5,9 @@
       "settings": {
         "pagination-test": 5
       }
-    },
-    "1631026709813a1d4f": {
-      "type": "featured-collection-test",
-      "settings": {
-      }
     }
   },
   "order": [
-    "product-grid",
-    "1631026709813a1d4f"
+    "product-grid"
   ]
 }
