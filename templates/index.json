@@ -79,11 +79,17 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "16314566571cccba79": {
+      "type": "featured-collection-test",
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
-    "image_text"
+    "image_text",
+    "16314566571cccba79"
   ]
 }
