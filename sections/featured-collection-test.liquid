@@ -1,7 +1,8 @@
-{% assign collection = collections['featured-collections'] %}
+{% assign collection = collections[section.settings.collection] %}
+{{ collection }}
 <div>
     {% for product in collection.products %}
-        {% render 'product-items-test' %}
+        {% include 'product-items-test' %}
         {% else %}
         <p>no matches for {{ collection.title }}</p>
         <p>{{ product }}</p>
@@ -11,7 +12,13 @@
 {% schema %}
     {
         "name": "Featured Collection Test",
-        "settings": [],
+        "settings": [
+            {
+                "type": "collection",
+                "id": "collection",
+                "label": "Collection"
+            }
+        ],
         "presets": [
             {
                 "name": "Featured Collection Test",
