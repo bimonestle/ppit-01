@@ -1,7 +1,7 @@
 {% assign collection = collections['featured-collections'] %}
 <div>
     {% for product in collection.products %}
-        {% render 'product-items' %}
+        {% render 'product-items-test' %}
         {% else %}
         <p>no matches for {{ collection.title }}</p>
         <p>{{ product }}</p>
