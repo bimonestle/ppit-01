@@ -1,0 +1,29 @@
+<div class="gallery"></div>
+  {% for block in section.blocks %}
+    {{ block.settings.image | img_url: '500x' | img_tag: 'TEST' }}
+  {% endfor %}
+{% schema %}
+  {
+    "name": "Gallery",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
