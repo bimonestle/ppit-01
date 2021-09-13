@@ -67,11 +67,32 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/smiling-man-in-formalwear.jpg"
             }
+          },
+          "2cabb709-c004-42b3-9bb1-6ff46d2066e6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/black-and-white-portrait-mens-fashion.jpg"
+            }
+          },
+          "0086e2e1-de6d-44fb-98d0-2fe051aca26c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg"
+            }
+          },
+          "c0536734-c751-4371-9750-bc96d95249c4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            }
           }
         },
         "block_order": [
           "ccbeffaa-ffa8-41e6-8ce7-09ad3017e4f5",
-          "ab469bc2-86e0-45be-bced-e2b2e2811bbf"
+          "ab469bc2-86e0-45be-bced-e2b2e2811bbf",
+          "2cabb709-c004-42b3-9bb1-6ff46d2066e6",
+          "0086e2e1-de6d-44fb-98d0-2fe051aca26c",
+          "c0536734-c751-4371-9750-bc96d95249c4"
         ],
         "settings": {
         }
