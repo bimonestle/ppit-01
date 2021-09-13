@@ -52,6 +52,29 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "gallery-test": {
+        "type": "gallery-test",
+        "blocks": {
+          "ccbeffaa-ffa8-41e6-8ce7-09ad3017e4f5": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/core-strength-workout.jpg"
+            }
+          },
+          "ab469bc2-86e0-45be-bced-e2b2e2811bbf": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/smiling-man-in-formalwear.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "ccbeffaa-ffa8-41e6-8ce7-09ad3017e4f5",
+          "ab469bc2-86e0-45be-bced-e2b2e2811bbf"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
