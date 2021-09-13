@@ -1,11 +1,7 @@
 <div class="gallery"></div>
   {% for block in section.blocks %}
-    <div class="image-wrap"
-      style="background-image: url('{{ block.settings.image | img_url: '500x' | img_tag: 'TEST' }}');
-      width: 500px;
-      height: 500px;
-      background-size: cover;">
-    </div>
+    <div class="image-wrap">
+    {{ block.settings.image | img_url: '500x' | img_tag: 'TEST' }}
   {% endfor %}
 {% schema %}
   {
