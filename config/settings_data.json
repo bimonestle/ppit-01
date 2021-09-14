@@ -52,50 +52,6 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
-      },
-      "gallery-test": {
-        "type": "gallery-test",
-        "blocks": {
-          "83ad139a-3dfb-47f2-ab17-83f8670f4762": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg"
-            }
-          },
-          "64649685-0c5f-48dd-b5e8-05d2fcd0a569": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/core-strength-workout.jpg"
-            }
-          },
-          "bc1805fe-f2d9-42e7-8efa-f2c28b201a2f": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/smiling-man-in-formalwear.jpg"
-            }
-          },
-          "f720bb4f-c61f-46bd-8e0e-f742af62119b": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
-            }
-          },
-          "28cfec0a-c1b8-4ef2-99ee-eda4ef98842b": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/black-and-white-portrait-mens-fashion.jpg"
-            }
-          }
-        },
-        "block_order": [
-          "83ad139a-3dfb-47f2-ab17-83f8670f4762",
-          "64649685-0c5f-48dd-b5e8-05d2fcd0a569",
-          "bc1805fe-f2d9-42e7-8efa-f2c28b201a2f",
-          "f720bb4f-c61f-46bd-8e0e-f742af62119b",
-          "28cfec0a-c1b8-4ef2-99ee-eda4ef98842b"
-        ],
-        "settings": {
-        }
       }
     },
     "content_for_index": [
