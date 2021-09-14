@@ -52,6 +52,22 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "gallery-test": {
+        "type": "gallery-test",
+        "blocks": {
+          "b7b9f2e8-a5e5-4aba-a8b2-9d0c9b4447aa": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "b7b9f2e8-a5e5-4aba-a8b2-9d0c9b4447aa"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
