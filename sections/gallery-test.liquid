@@ -10,7 +10,52 @@
 {% schema %}
   {
     "name": "Gallery",
-    "settings": [],
+    "settings": [
+      {
+        "type": "select",
+        "id": "per-row",
+        "label": "Images per row",
+        "default": "33%",
+        "options": [
+          {
+            "value": "49.5%",
+            "label": "2 per row"
+          },
+          {
+            "value": "33%",
+            "label": "3 per row"
+          },
+          {
+            "value": "24.5%",
+            "label": "4 per row"
+          },
+          {
+            "value": "19.5%",
+            "label": "5 per row"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "pic-height",
+        "label": "Image height",
+        "default": "500px",
+        "options": [
+          {
+            "value": "300px",
+            "label": "300px"
+          },
+          {
+            "value": "400px",
+            "label": "400px"
+          },
+          {
+            "value": "500px",
+            "label": "500px"
+          }
+        ]
+      }
+    ],
     "blocks": [
       {
         "type": "image",
@@ -30,8 +75,8 @@
 {% style %}
 .image-wrap {
   display: inline-block;
-  width: 33%;
-  height: 500px;
+  width: {{ section.settings.per-row }};
+  height: {{ section.settings.pic-height}};
   background-size: cover;
 }
 {% endstyle %}
