@@ -56,43 +56,43 @@
       "gallery-test": {
         "type": "gallery-test",
         "blocks": {
-          "ccbeffaa-ffa8-41e6-8ce7-09ad3017e4f5": {
+          "b7b9f2e8-a5e5-4aba-a8b2-9d0c9b4447aa": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            }
+          },
+          "9c68db27-85fa-43da-9d7a-9f1535f89b70": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/core-strength-workout.jpg"
             }
           },
-          "ab469bc2-86e0-45be-bced-e2b2e2811bbf": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/smiling-man-in-formalwear.jpg"
-            }
-          },
-          "2cabb709-c004-42b3-9bb1-6ff46d2066e6": {
+          "5fabe8ef-c786-464b-abca-3694e7199725": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/black-and-white-portrait-mens-fashion.jpg"
             }
           },
-          "0086e2e1-de6d-44fb-98d0-2fe051aca26c": {
+          "4a8de6fc-d3e5-4d97-8db3-21a5240dc29f": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg"
             }
           },
-          "c0536734-c751-4371-9750-bc96d95249c4": {
+          "525fdd23-f05b-46d6-88e5-29febf07eef0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+              "image": "shopify:\/\/shop_images\/smiling-man-in-formalwear.jpg"
             }
           }
         },
         "block_order": [
-          "ccbeffaa-ffa8-41e6-8ce7-09ad3017e4f5",
-          "ab469bc2-86e0-45be-bced-e2b2e2811bbf",
-          "2cabb709-c004-42b3-9bb1-6ff46d2066e6",
-          "0086e2e1-de6d-44fb-98d0-2fe051aca26c",
-          "c0536734-c751-4371-9750-bc96d95249c4"
+          "b7b9f2e8-a5e5-4aba-a8b2-9d0c9b4447aa",
+          "9c68db27-85fa-43da-9d7a-9f1535f89b70",
+          "5fabe8ef-c786-464b-abca-3694e7199725",
+          "4a8de6fc-d3e5-4d97-8db3-21a5240dc29f",
+          "525fdd23-f05b-46d6-88e5-29febf07eef0"
         ],
         "settings": {
         }
