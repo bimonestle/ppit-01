@@ -1,10 +1,24 @@
 <div class="gallery">
   {% for block in section.blocks %}
-    <div class="image-wrap"
-      style="border: solid;
-      background-image: url('{{ block.settings.image | img_url: '500x' }}');">
-    
-    </div>
+    {% if block.type == "image" %}
+      <div class="image-wrap"
+        style="border: solid;
+        background-image: url('{{ block.settings.image | img_url: '500x' }}');">
+      </div>
+    {% endif %}
+
+    {% if block.type == "video" %}
+      {% if block.settings.video-url == blank %}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yYAw79386WI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% else %}
+        {% if block.settings.video-url.type == "youtube" %}
+          <iframe src="//www.youtube.com/embed/{{ block.settings.video-url.id }}" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% endif %}
+        {% if block.settings.video-url.type == "vimeo" %}
+          <iframe src="//player.vimeo.com/video/{{ block.settings.video-url.id }}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        {% endif %}
+      {% endif %}
+    {% endif %}
   {% endfor %}
 </div>
 {% schema %}
@@ -67,13 +81,31 @@
             "label": "Image"
           }
         ]
+      },
+      {
+        "type": "video",
+        "name": "Video Block",
+        "settings": [
+          {
+            "type": "video_url",
+            "id": "video-url",
+            "label": "Video url",
+            "accept": ["youtube", "vimeo"]
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Custom Content",
+        "name": "Gallery Test"
       }
     ]
   }
 {% endschema %}
 
 {% style %}
-.image-wrap {
+.image-wrap, iframe {
   display: inline-block;
   width: {{ section.settings.per-row }};
   height: {{ section.settings.pic-height}};
